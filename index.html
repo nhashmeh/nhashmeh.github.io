@@ -14259,10 +14259,10 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Project-write-up-for-Milestone-1---Nadim-Hashmeh,-CMPS-6160">Project write-up for Milestone 1 - Nadim Hashmeh, CMPS 6160<a class="anchor-link" href="#Project-write-up-for-Milestone-1---Nadim-Hashmeh,-CMPS-6160">&#182;</a></h1><p>Background: Mars has two polar caps that are largely composed of water ice, like Earth. Planetary scientists measure the amount of electromagnetic radiation reflected off the polar cap surface as well as dielectric interfaces in the subsurface using active radar sounding to learn more about its composition and internal structure. The strength of radar reflections is mostly determined by the contrast in dielectric properties between two overlying materials, such as the atmosphere and ice, or ice and rock. Radar reflections at the surface and below are typically represented as bright "reflectors" in cross-sectional images known as radargrams. The data that comprises these radargrams are three dimensional: horizontal position, vertical position, and brightness (relative power of reflection). Using these, scientists can analyze the vertical distribution of dielectric contrasts that are sensitive to the frequency of the radar being used.</p>
-<p>Motivation: For my PhD, I am attempting to explain the unexpected behavior of high frequency radar at the south polar cap in order to gain more understanding about its interior structure, distribution of material, and surface texture. High frequency radar behavior (20 MHz) at the south polar cap differs from its northern counterpart, as well as many typical glacier observations on Earth, in that it is often incoherent and rapidly attenuates before reaching the basal interface, if it even reaches the base at all. At lower frequencies (~5 MHz), this behavior is not observed in either polar cap. Therefore, some property of the south polar cap is sensitive to scattering radar at relatively higher frequencies. One way to investigate this is to compare the basal reflector power to the thickness of material above it. One would expect a negative correlation between these two variables, and in my own work, I have observed it in some areas. However, there are many unexpected instances where it does not follow the same trend. My broader research goals aim to explain this behavior, and one avenue I have considered is looking at the role of surface slope in influencing the propagation of radar through the south polar ice.</p>
-<p>Data: I have surface and basal reflector information for both south and north polar caps. SHAllow RADar (SHARAD) radargrams are available in NASA's Planetary Data System archive, which I used to extract the reflector position and power information from using a variety of tools during my own research. This compiled dataset contains the orbit number, reflector identifier, vertical pixel position, surface elevation, raw radar power, latitude, longitude, and spatial categorical information of pairs of surface and basal reflectors.</p>
-<p>Plan and question(s) to be answered: I will use Python to calculate the slope of each surface reflector I have mapped and compare that information to ice thickness and reflector power values to see if surface slope shows any correlation across these variables. Basically, do steeper surfaces affect the detection of the base in any notable way? I will also explore relationships between these values and the spatial categorical data they contain to note the regional distribution of my observations.</p>
+<h1 id="Project-write-up-for-Milestone-1---Nadim-Hashmeh,-CMPS-6160">Project write-up for Milestone 1 - Nadim Hashmeh, CMPS 6160<a class="anchor-link" href="#Project-write-up-for-Milestone-1---Nadim-Hashmeh,-CMPS-6160">&#182;</a></h1><p><strong>Background:</strong> Mars has two polar caps that are largely composed of water ice, like Earth. Planetary scientists measure the amount of electromagnetic radiation reflected off the polar cap surface as well as dielectric interfaces in the subsurface using active radar sounding to learn more about its composition and internal structure. The strength of radar reflections is mostly determined by the contrast in dielectric properties between two overlying materials, such as the atmosphere and ice, or ice and rock. Radar reflections at the surface and below are typically represented as bright "reflectors" in cross-sectional images known as radargrams. The data that comprises these radargrams are three dimensional: horizontal position, vertical position, and brightness (relative power of reflection). Using these, scientists can analyze the vertical distribution of dielectric contrasts that are sensitive to the frequency of the radar being used.</p>
+<p><strong>Motivation:</strong> For my PhD, I am attempting to explain the unexpected behavior of high frequency radar at the south polar cap in order to gain more understanding about its interior structure, distribution of material, and surface texture. High frequency radar behavior (20 MHz) at the south polar cap differs from its northern counterpart, as well as many typical glacier observations on Earth, in that it is often incoherent and rapidly attenuates before reaching the basal interface, if it even reaches the base at all. At lower frequencies (~5 MHz), this behavior is not observed in either polar cap. Therefore, some property of the south polar cap is sensitive to scattering radar at relatively higher frequencies. One way to investigate this is to compare the basal reflector power to the thickness of material above it. One would expect a negative correlation between these two variables, and in my own work, I have observed it in some areas. However, there are many unexpected instances where it does not follow the same trend. My broader research goals aim to explain this behavior, and one avenue I have considered is looking at the role of surface slope in influencing the propagation of radar through the south polar ice.</p>
+<p><strong>Data:</strong> I have surface and basal reflector information for both south and north polar caps. SHAllow RADar (SHARAD) radargrams are available in NASA's Planetary Data System archive, which I used to extract the reflector position and power information from using a variety of tools during my own research. This compiled dataset contains the orbit number, reflector identifier, vertical pixel position, surface elevation, raw radar power, latitude, longitude, and spatial categorical information of pairs of surface and basal reflectors.</p>
+<p><strong>Plan and question(s) to be answered:</strong> I will use Python to calculate the slope of each surface reflector I have mapped and compare that information to ice thickness and reflector power values to see if surface slope shows any correlation across these variables. Basically, do steeper surfaces affect the detection of the base in any notable way? I will also explore relationships between these values and the spatial categorical data they contain to note the regional distribution of my observations.</p>
 <h3 id="Project-website-(this-page):">Project website (this page):<a class="anchor-link" href="#Project-website-(this-page):">&#182;</a></h3><p><a href="https://nhashmeh.github.io">https://nhashmeh.github.io</a></p>
 <h3 id="Project-repository:">Project repository:<a class="anchor-link" href="#Project-repository:">&#182;</a></h3><p><a href="https://github.com/nhashmeh/nhashmeh.github.io">https://github.com/nhashmeh/nhashmeh.github.io</a></p>
 <h3 id="Project-data:">Project data:<a class="anchor-link" href="#Project-data:">&#182;</a></h3><p><a href="https://github.com/nhashmeh/nhashmeh.github.io/blob/main/spld_data_6160project.csv">https://github.com/nhashmeh/nhashmeh.github.io/blob/main/spld_data_6160project.csv</a></p>
@@ -14273,7 +14273,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># import relevant libraries</span>
@@ -14288,7 +14288,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># load in data</span>
@@ -14310,7 +14310,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 
 
 
@@ -14333,101 +14333,95 @@ a.anchor-link {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>OBJECTID</th>
-      <th>track</th>
-      <th>ypx_br</th>
+      <th>orbit_num</th>
+      <th>segment_id</th>
+      <th>br_loc</th>
+      <th>surf_loc</th>
       <th>br_power_raw</th>
       <th>surf_power_raw</th>
-      <th>ypx_surf</th>
       <th>lat</th>
       <th>lon</th>
       <th>surf_elevation</th>
       <th>region</th>
       <th>lrz</th>
       <th>fog</th>
-      <th>segment_id</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>1</td>
       <td>37201</td>
+      <td>0</td>
       <td>1619</td>
+      <td>1458</td>
       <td>0.000362</td>
       <td>0.216509</td>
-      <td>1458</td>
       <td>-75.3896</td>
       <td>180.1296</td>
       <td>1901.906494</td>
       <td>UL</td>
       <td>yes</td>
       <td>yes</td>
-      <td>0.0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2</td>
       <td>37201</td>
+      <td>0</td>
       <td>1616</td>
+      <td>1457</td>
       <td>0.000320</td>
       <td>0.229403</td>
-      <td>1457</td>
       <td>-75.3970</td>
       <td>180.1237</td>
       <td>1903.368896</td>
       <td>UL</td>
       <td>yes</td>
       <td>yes</td>
-      <td>0.0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>3</td>
       <td>37201</td>
+      <td>0</td>
       <td>1617</td>
+      <td>1457</td>
       <td>0.000273</td>
       <td>0.217162</td>
-      <td>1457</td>
       <td>-75.4043</td>
       <td>180.1178</td>
       <td>1905.088501</td>
       <td>UL</td>
       <td>yes</td>
       <td>yes</td>
-      <td>0.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>4</td>
       <td>37201</td>
+      <td>0</td>
       <td>1616</td>
+      <td>1457</td>
       <td>0.000353</td>
       <td>0.156191</td>
-      <td>1457</td>
       <td>-75.4128</td>
       <td>180.1109</td>
       <td>1907.261230</td>
       <td>UL</td>
       <td>yes</td>
       <td>yes</td>
-      <td>0.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>5</td>
       <td>37201</td>
+      <td>0</td>
       <td>1613</td>
+      <td>1457</td>
       <td>0.000317</td>
       <td>0.193375</td>
-      <td>1457</td>
       <td>-75.4202</td>
       <td>180.1049</td>
       <td>1908.500610</td>
       <td>UL</td>
       <td>yes</td>
       <td>yes</td>
-      <td>0.0</td>
     </tr>
   </tbody>
 </table>
